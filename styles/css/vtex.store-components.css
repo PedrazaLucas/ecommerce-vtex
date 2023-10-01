@@ -1,0 +1,60 @@
+/* .searchBarInnerContainer{
+    width: 200%;
+} */
+
+.imageElement--login-logo--mobile{
+    width: 25px;
+    height: 25px;
+    margin: 20px;
+    margin-left: 60px;
+}
+
+/* HOME BANNER DESKTOP */
+.infoCardContainer--banner--home{
+    height: 80vh;
+    background-size: cover;
+    object-fit: cover;
+    object-position: bottom;
+    margin-top: 20px;
+  }
+  
+  .infoCardTextContainer--banner--home{
+    height: auto;
+    align-self: normal;
+  }
+  
+  .infoCardTextContainer--banner--home ::before{
+    background-color: none;
+  }
+
+  .infoCardHeadline--banner--home{
+    color: #fff;
+  }
+
+  /*HOME BANNER MOBILE*/
+.infoCardHeadline--banner--home--mobile{
+    font-size: 100%;
+    color: #fff;
+}
+
+.infoCardContainer--banner--home--mobile{
+    height: 20vh;
+    background-size: cover;
+    object-fit: cover;
+    object-position: bottom;
+    margin-top: 20px;
+  }
+
+.infoCardTextContainer--banner--home--mobile{
+    height: auto;
+    align-self: normal;
+  }
+  
+  .infoCardTextContainer--banner--home--mobile ::before{
+    background-color: none;
+  }
+
+  .infoCardHeadline--banner--home--mobile{
+    color: #fff;
+  }
+

@@ -1,0 +1,69 @@
+.flexColChild--links-drawer-all--col{
+    padding: 15px;
+    margin: 15px;
+}
+
+.flexRowContent--header-desktop--row{
+    align-items: center;
+}
+
+.flexRow--header-desktop--row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.flexCol--first--col{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.flexCol--second--col{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flexCol--third--col{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flexRow--navbar--desktop{
+    text-align: center;
+}
+
+/* HEADER MOBILE */
+
+.flexRowContent--header-mobile--row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  
+  .flexCol--first--col--mobile{
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .flexColChild--second--col--mobile{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .flexCol--third--col--mobile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+
+  .main-header-mobile{
+    background-color: red;
+  }

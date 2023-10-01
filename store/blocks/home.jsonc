@@ -1,0 +1,114 @@
+{
+  "store.home": { 
+    "blocks": [
+      "responsive-layout.desktop#home",
+      "responsive-layout.mobile#home"
+    ]
+  },
+  "responsive-layout.desktop#home": {
+    "children": [
+      
+      "flex-layout.row#banner--infoCard" ,
+      "shelf#home"
+    ]
+  },
+
+    // BANNER HOME
+
+  "flex-layout.row#banner--infoCard": {
+    "children": [
+      "info-card#banner--home"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "banner--infoCard"
+    }
+  },
+
+  "info-card#banner--home": {
+    "props": {
+      "id": "banner--home",
+      "isFullModeStyle": true,
+      "imageUrl": "assets/banner-desktop-1.jpg",
+      "headline": "STORE THEME",
+      "blockClass": "banner--home",
+      "textPosition": "right",
+      "callToActionMode": "none"
+    }
+  },
+
+  
+
+  // GALERIA
+
+  "shelf#home": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Nuestros Productos"
+      }
+    }
+  },
+
+
+  // MOBILE
+
+  "responsive-layout.mobile#home": {
+    "children": [
+      "flex-layout.row#home-banner-col--mobile", 
+      "shelf#home-mobile"
+
+    ]
+  },
+
+  // BANNER
+
+  "flex-layout.row#home-banner-col--mobile": {
+    "children": [
+      "info-card#banner--home--mobile"
+    ],
+    "props": {
+      "blockClass": "home-banner-col--mobile"
+    }
+  },
+
+  "info-card#banner--home--mobile": {
+    "props": {
+      "id": "banner--home--mobile",
+      "isFullModeStyle": true,
+      "imageUrl": "assets/banner-mobile.jpg",
+      "headline": "STORE THEME",
+      "blockClass": "banner--home--mobile",
+      "textAlignment": "left",
+      "callToActionMode": "none"
+    }
+  },
+
+
+
+  // GALERIA MOBILE
+
+  "shelf#home-mobile": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "productList": {
+        "maxItems": 5,
+        "itemsPerPage": 1,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Nuestros Productos"
+      }
+    }
+  }
+
+}

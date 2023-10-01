@@ -1,0 +1,10 @@
+.footerLayout--footer-desktop{
+    height: 150px;
+    background-color: gray;
+    width: 100%;
+    text-align: center;
+}
+
+.footerLayout--footer-mobile{
+    text-align: center;
+}

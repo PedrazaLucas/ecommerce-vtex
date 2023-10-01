@@ -1,0 +1,324 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "sticky-layout#desktop"
+    ]
+  },
+
+
+  // HEADER DESKTOP
+
+
+
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#desktop-1","flex-layout.row#desktop-2"]
+  },
+  "flex-layout.row#desktop-1": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": "header-desktop--row"
+    },
+    "children": [
+      "flex-layout.col#first--col",
+      "flex-layout.col#second--col",
+      "flex-layout.col#third--col"
+    ]
+  },
+
+  "flex-layout.row#desktop-2": {
+    "children": [
+      "flex-layout.row#category-menu"
+    ],
+    "props": {
+      "width": "grow",
+      "blockClass": "navbar--desktop"
+    }
+  },
+
+  "flex-layout.row#category-menu":{
+    "props":{
+      "blockClass": "category-menu-desktop"
+    },
+
+    "children":[
+      "link#menu1",
+      "link#menu2",
+      "link#menu3",
+      "link#menu4"
+    ]
+
+  },
+
+
+  // FIRST COL
+
+  "flex-layout.col#first--col": {
+    "children": [
+      "flex-layout.col#logo-desktop"
+    ],
+    "props": {
+      "blockClass": "first--col"
+    }
+  },
+
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vtexassets.com/arquivos/store-theme-logo.png",
+      "width": "150"
+    }
+  },
+
+  // SECOND COL
+
+  "flex-layout.col#second--col": {
+    "children": [
+      "flex-layout.col#search-bar--desktop"
+    ],
+    "props": {
+      "blockClass": "second--col"
+    }
+  },
+
+
+  "flex-layout.col#search-bar--desktop": {
+    "children": [
+      "search-bar"
+    ],
+    "props": {
+      "blockClass": "search-bar--desktop"
+    }
+  },
+
+  // 3ra col
+
+  "flex-layout.col#third--col": {
+    "children": [
+      "image#login-logo--desktop",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "third--col"
+    }
+  },
+  "image#login-logo--desktop": {
+    "props": {
+      "link": {
+        "url": "/account"
+      },
+      "src": "assets/LoginMobile.png",
+      "blockClass": "login-logo--mobile"
+    }
+  },
+
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "Iniciar Sesión",
+      "accessCodeTitle": "Acceder con Código",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "iconLabel": "Iniciar Sesión",
+      "blockClass": "login--desktop"
+    }
+  },
+
+
+
+  // HEADER MOBILE
+
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "props": {
+      "blockClass": "sticky-header-mobile"
+    },
+    "children": ["flex-layout.row#header-mobile--row","flex-layout.row#header-mobile--row2"]
+  },
+  "flex-layout.row#header-mobile--row": {
+    "children": [
+      "flex-layout.col#first--col--mobile",
+      "flex-layout.col#second--col--mobile",
+      "flex-layout.col#third--col--mobile"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+  // FIRST COL
+
+  "flex-layout.col#first--col--mobile": {
+    "children": [
+      "drawer"
+    ],
+    "props": {
+      "blockClass": "first--col--mobile"
+    }
+  },
+
+
+  "drawer": {
+    "children": [
+      "menu#drawer"
+    ],
+    "props": {
+      "blockClass": "drawer--mobile"
+    }
+  },
+  "menu#drawer": {
+    "children": [
+      "flex-layout.col#drawer-menu--items"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "isFullWidth": true,
+      "blockClass": "menu-drawer--mobile"
+    }
+  },
+  "flex-layout.col#drawer-menu--items": {
+    "children": [
+      "flex-layout.col#menu-accordion-all"
+    ],
+    "props": {
+      "blockClass": "drawer-menu--items"
+    }
+  },
+  "flex-layout.col#menu-accordion-all": {
+    "children": [
+      "flex-layout.col#links-drawer-all--col"
+    ],
+    "props": {
+      "blockClass": "menu-accordion-all"
+    }
+  },
+  "flex-layout.col#links-drawer-all--col": {
+    "children": [
+      "link#menu1",
+      "link#menu2",
+      "link#menu3",
+      "link#menu4"
+    ],
+    "props": {
+      "blockClass": "links-drawer-all--col"
+    }
+  },
+  "link#menu1": {
+    "props": {
+      "label": "MENU 1",
+      "href": "/winter-2022",
+      "displayMode": "anchor",
+      "blockClass": "link-drawer--new-in"
+    }
+  },
+  "link#menu2": {
+    "props": {
+      "label": "MENU 2",
+      "href": "/winter-2022",
+      "displayMode": "anchor",
+      "blockClass": "link-drawer--new-in"
+    }
+  },
+  "link#menu3": {
+    "props": {
+      "label": "MENU 3",
+      "href": "/winter-2022",
+      "displayMode": "anchor",
+      "blockClass": "link-drawer--new-in"
+    }
+  },
+  "link#menu4": {
+    "props": {
+      "label": "MENU 4",
+      "href": "/winter-2022",
+      "displayMode": "anchor",
+      "blockClass": "link-drawer--new-in"
+    }
+  },
+
+
+  // SECOND COL
+
+  "flex-layout.col#second--col--mobile": {
+    "children": [
+      "logo#logo-magher-mobile"
+    ],
+    "props": {
+      "blockClass": "second--col--mobile"
+    }
+  },
+
+  "logo#logo-magher-mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/#",
+      "url": "https://storecomponents.vtexassets.com/arquivos/store-theme-logo.png",
+      "width": "200",
+      "blockClass": "logo-magher-mobile"
+    }
+  },
+
+
+  // THIRD COL
+
+  "flex-layout.col#third--col--mobile": {
+    "children": [
+      "image#login-logo--mobile" ,
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "third--col--mobile"
+    }
+  },
+
+  "image#login-logo--mobile": {
+    "props": {
+      "link": {
+        "url": "/account"
+      },
+      "src": "assets/LoginMobile.png",
+      "blockClass": "login-logo--mobile"
+    }
+  },
+
+  "flex-layout.row#header-mobile--row2": {
+    "children": [
+      "search-bar#mobile-search-bar"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "header-mobile--row2"
+    }
+  },
+
+  "search-bar#mobile-search-bar": {
+    "props": {
+      "placeholder": "Buscar",
+      "blockClass": "mobile-search-bar",
+      "displayMode": "clear-button"
+    }
+  }
+
+  
+}
